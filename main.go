@@ -43,12 +43,17 @@ func main() {
 
 }
 
+// stage1() reads all lines of a file and put each line on the channel.
+// In other words, stage1() is a generator that returns a receive-only channel
 func stage1() <-chan string {
 
+	// to not wait for slow readers we define a buffer for the writer
 	in := make(chan string, 5)
 
-	//! use ctx
+	//TODO use ctx
 	go func() {
+
+		// To ensure that it closes the channel in either case of success or error
 		defer close(in)
 
 		f := readFile()
@@ -59,6 +64,9 @@ func stage1() <-chan string {
 			case in <- line:
 				continue
 			case <-time.After(time.Millisecond * 10):
+				// to not block the writer in case the reader fails to read (crash, etc.)
+				// we cancel writing to the channel after a timeout.
+				// However, it is an implicit approach. TODO use Context instead
 				break LOOP
 			}
 		}
