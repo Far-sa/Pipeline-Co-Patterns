@@ -75,6 +75,9 @@ func stage1() <-chan string {
 	return in
 }
 
+// stage2() receives a channel of data stream to receive data, process them and
+// put the result on the another channel. Once the channel is closed and drained,
+// it stops and removes itself from the WaitGroup
 func stage2(in <-chan string, out chan<- int, wg *sync.WaitGroup) {
 	defer wg.Done()
 
