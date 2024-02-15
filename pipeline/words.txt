@@ -1,0 +1,27 @@
+Go concurrency patterns present the basic of Go's concurrency primitives
+and several ways to apply them. Advanced Go concurrency Patterns covers 
+more complex use of Go's primitives,especially select Douglas McIlory's 
+paper.
+
+Go concurrency patterns present the basic of Go's concurrency primitives
+and several ways to apply them. Advanced Go concurrency Patterns covers 
+more complex use of Go's primitives,especially select Douglas McIlory's 
+paper.
+
+
+Go concurrency patterns present the basic of Go's concurrency primitives
+Go concurrency patterns present the basic of Go's concurrency primitives
+Go concurrency patterns present the basic of Go's concurrency primitives
+and several ways to apply them. Advanced Go concurrency Patterns covers 
+more complex use of Go's primitives,especially select Douglas McIlory's 
+paper.
+
+and several ways to apply them. Advanced Go concurrency Patterns covers 
+more complex use of Go's primitives,especially select Douglas McIlory's 
+paper.
+
+and several ways to apply them. Advanced Go concurrency Patterns covers 
+more complex use of Go's primitives,especially select Douglas McIlory's 
+paper.
+
+
