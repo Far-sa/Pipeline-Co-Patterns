@@ -11,7 +11,7 @@ import (
 )
 
 func pipeline() {
-	fmt.Println("------------- PIPELINE --------------->")
+	fmt.Println("------------- PIPELINE PKG --------------->")
 
 	//* Stage 1
 	in := stage1()
